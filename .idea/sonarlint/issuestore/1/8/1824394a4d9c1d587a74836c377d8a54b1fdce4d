@@ -1,0 +1,16 @@
+
+Msquid:S2093%"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8Õ’¸-
+Fsquid:S11489"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Õ’¸-
+Fsquid:S1148;"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Õ’¸-
+bsquid:S21472"DCombine this catch with the one at line 48, which has the same body.(ıàÑÎ8Õ’¸-
+gsquid:S21474"DCombine this catch with the one at line 48, which has the same body.(¼¯•¶ùÿÿÿÿ8Õ’¸-
+Fsquid:S1148A"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Õ’¸-
+bsquid:S21476"DCombine this catch with the one at line 48, which has the same body.(¯áè8Õ’¸-
+bsquid:S2147:"DCombine this catch with the one at line 48, which has the same body.(åşáÿ8Õ’¸-
+Fsquid:S11481"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Õ’¸-
+Fsquid:S11487"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Õ’¸-
+Fsquid:S11485"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Õ’¸-
+Fsquid:S11483"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Õ’¸-
+squid:S1488`"^Immediately return this expression instead of assigning it to the temporary variable "result".(Èøïéûÿÿÿÿ8¶ó’¸-
+bsquid:S21478"DCombine this catch with the one at line 48, which has the same body.(Å¡ß8Õ’¸-
+Fsquid:S1148H"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Õ’¸-
