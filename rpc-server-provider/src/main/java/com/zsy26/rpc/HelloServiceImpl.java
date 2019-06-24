@@ -6,6 +6,7 @@ package com.zsy26.rpc;
  * @author: Mr.Zheng
  * @create: 2019-06-22 21:55
  **/
+@RpcService(value = HelloService.class)
 public class HelloServiceImpl implements HelloService {
 
 

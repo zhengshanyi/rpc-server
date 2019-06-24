@@ -6,6 +6,7 @@ import java.io.ObjectOutputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.Socket;
+import java.util.Map;
 
 /**
  * @program: rpc-server
@@ -18,11 +19,11 @@ public class ProccessHandler implements Runnable {
 
     private Socket socket;
 
-    private Object service;
+    private Map<String,Object> handlerMap;
 
-    public ProccessHandler(Socket socket, Object service) {
+    public ProccessHandler(Socket socket, Map<String,Object> handlerMap) {
         this.socket = socket;
-        this.service = service;
+        this.handlerMap = handlerMap;
     }
 
 
@@ -83,6 +84,11 @@ public class ProccessHandler implements Runnable {
     }
 
     private Object invoke(RpcRequest rpcRequest) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
+        //获取请求中的类名 在hadlermap中 获取实例
+        Object service = handlerMap.get(rpcRequest.getClassName());
+        if (service == null){
+            throw new RuntimeException("the "+rpcRequest.getClassName()+" bean not found");
+        }
         //获取请求参数
         Object[] args = rpcRequest.getParamters();
         //获得每个参数
